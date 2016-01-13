@@ -35,4 +35,9 @@ return [
         'secret' => env('STRIPE_SECRET'),
     ],
 
+    'leancloud' => [
+        'id'        => env('LC_APP_ID'),
+        'key'       => env('LC_APP_KEY'),
+        'masterKey' => env('LC_APP_MASTER_KEY'),
+    ],
 ];

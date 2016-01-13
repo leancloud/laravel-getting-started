@@ -3,6 +3,7 @@
 namespace App\Http;
 
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
+use \LeanCloud\Engine\LaravelEngine;
 
 class Kernel extends HttpKernel
 {
@@ -15,6 +16,7 @@ class Kernel extends HttpKernel
      */
     protected $middleware = [
         \Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode::class,
+        \LeanCloud\Engine\LaravelEngine::class
     ];
 
     /**
