@@ -3,7 +3,7 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use LeanCloud\LeanClient;
+use LeanCloud\Client;
 use LeanCloud\Engine\Cloud;
 use LeanCloud\Engine\LaravelEngine;
 
@@ -33,7 +33,7 @@ class LeanCloudServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        LeanClient::initialize(
+        Client::initialize(
             config('services.leancloud.id'),
             config('services.leancloud.key'),
             config('services.leancloud.masterKey')
